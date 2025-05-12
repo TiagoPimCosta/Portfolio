@@ -1,12 +1,17 @@
-import { ThemeToggle } from "@/components/ThemeToggle";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      Hello World
-      <div className="fixed bottom-5 right-5">
-        <ThemeToggle />
+    <section>
+      <div className="mb-8">
+        <h1 className="text-2xl font-semibold tracking-tighter">{`Hey, I'm Tiago`}</h1>
+        <p>{`Front End Developer based in Porto, Portugal`}</p>
       </div>
-    </div>
+      <p className="mb-4">
+        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
+        Vim's keystroke commands and tabs' flexibility for personal viewing
+        preferences. This extends to my support for static typing, where its
+        early error detection ensures cleaner code, and my preference for dark
+        mode, which eases long coding sessions by reducing eye strain.`}
+      </p>
+    </section>
   );
 }

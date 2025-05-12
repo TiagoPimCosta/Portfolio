@@ -9,7 +9,11 @@ export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
 
   const handleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
   };
 
   return (
