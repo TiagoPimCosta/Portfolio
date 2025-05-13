@@ -1,4 +1,5 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -16,8 +17,8 @@ const navItems = {
   "/portfolio": {
     name: "portfolio",
   },
-  "/services": {
-    name: "services",
+  "/freelancing": {
+    name: "freelancing",
   },
 };
 
