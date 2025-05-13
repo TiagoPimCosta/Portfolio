@@ -1,18 +1,29 @@
+"use client";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = {
   "/": {
     name: "home",
   },
-  "/projects": {
-    name: "projects",
+  "/about": {
+    name: "about",
   },
-  "/experience": {
-    name: "experience",
+  "/skills": {
+    name: "skills",
+  },
+  "/portfolio": {
+    name: "portfolio",
+  },
+  "/services": {
+    name: "services",
   },
 };
 
 export function Navbar() {
+  const pathname = usePathname();
+
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
@@ -26,7 +37,10 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className={cn(
+                    "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1",
+                    pathname === path ? "border-b" : ""
+                  )}
                 >
                   {name}
                 </Link>
