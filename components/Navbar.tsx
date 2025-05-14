@@ -1,28 +1,28 @@
 "use client";
+
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const navItems = {
-  "/": {
-    name: "home",
-  },
-  "/about": {
-    name: "about",
-  },
-  "/skills": {
-    name: "skills",
-  },
-  "/portfolio": {
-    name: "portfolio",
-  },
-  "/services": {
-    name: "services",
-  },
-};
+import { useTranslations } from "next-intl";
 
 export function Navbar() {
   const pathname = usePathname();
+  const t = useTranslations("Navbar");
+
+  const navItems = {
+    "/": {
+      name: t("home"),
+    },
+    "/about": {
+      name: t("about"),
+    },
+    "/skills": {
+      name: t("skills"),
+    },
+    "/portfolio": {
+      name: t("portfolio"),
+    },
+  };
 
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
