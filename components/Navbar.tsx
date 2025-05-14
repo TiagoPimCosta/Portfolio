@@ -17,9 +17,6 @@ const navItems = {
   "/portfolio": {
     name: "portfolio",
   },
-  "/freelancing": {
-    name: "freelancing",
-  },
 };
 
 export function Navbar() {

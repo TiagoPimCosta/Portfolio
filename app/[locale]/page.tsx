@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { Link } from "@/src/i18n/navigation";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -10,7 +9,6 @@ export default function Home() {
         <p>{`Front End Developer based in Porto, Portugal`}</p>
       </div>
       <h1>{t("title")}</h1>
-      <Link href="/about">{t("about")}</Link>
       <p className="mb-4">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
