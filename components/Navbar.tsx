@@ -1,9 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { Link } from "@/src/i18n/navigation";
 
 export function Navbar() {
   const pathname = usePathname();
