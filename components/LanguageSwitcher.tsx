@@ -30,7 +30,11 @@ export default function LanguageSwitcher() {
         </DropdownMenuTrigger>
         <DropdownMenuContent align="center" className="min-w-fit rounded-full">
           {["en", "pt"].map((locale) => (
-            <DropdownMenuItem key={locale} onClick={() => handleChange(locale)} className="p-2">
+            <DropdownMenuItem
+              key={locale}
+              onClick={() => handleChange(locale)}
+              className="p-2 rounded-full"
+            >
               {locale.toUpperCase()}
             </DropdownMenuItem>
           ))}

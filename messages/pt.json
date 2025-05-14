@@ -1,6 +1,21 @@
 {
+  "Navbar": {
+    "home": "inicio",
+    "about": "sobre",
+    "skills": "skills",
+    "portfolio": "portfólio"
+  },
   "HomePage": {
-    "title": "Olá mundo!",
-    "about": "Go to the portugues page"
+    "title": "Olá, sou o Tiago Pimenta Costa",
+    "subTitle": "Programador FullStack localizado Porto, Portugal"
+  },
+  "AboutPage": {
+    "title": "Página Sobre"
+  },
+  "SkillsPage": {
+    "title": "Página Skills"
+  },
+  "PortfolioPage": {
+    "title": "Página Portfólio"
   }
 }

@@ -1,6 +1,21 @@
 {
+  "Navbar": {
+    "home": "home",
+    "about": "about",
+    "skills": "skills",
+    "portfolio": "portfolio"
+  },
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "title": "Hey, I'm Tiago Pimenta Costa",
+    "subTitle": "FullStack Developer based in Porto, Portugal"
+  },
+  "AboutPage": {
+    "title": "About Page"
+  },
+  "SkillsPage": {
+    "title": "Skills Page"
+  },
+  "PortfolioPage": {
+    "title": "Portfolio Page"
   }
 }
