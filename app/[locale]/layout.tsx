@@ -12,6 +12,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/src/i18n/routing";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { cn } from "@/lib/utils";
+import RidingDotsOnGridLines from "@/components/backgrounds/RidingDotsOnGridLines";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -52,6 +53,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <RidingDotsOnGridLines />
             <div className="max-w-xl mx-4 lg:mx-auto mt-8 relative">
               <Navbar />
               <Button

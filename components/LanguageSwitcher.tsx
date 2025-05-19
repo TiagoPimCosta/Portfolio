@@ -29,15 +29,19 @@ export default function LanguageSwitcher() {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="center" className="min-w-fit rounded-full">
-          {["en", "pt"].map((locale) => (
-            <DropdownMenuItem
-              key={locale}
-              onClick={() => handleChange(locale)}
-              className="p-2 rounded-full"
-            >
-              {locale.toUpperCase()}
-            </DropdownMenuItem>
-          ))}
+          {["en", "pt"].map((locale) => {
+            if (locale !== currentLocale) {
+              return (
+                <DropdownMenuItem
+                  key={locale}
+                  onClick={() => handleChange(locale)}
+                  className="p-2 w-8 h-8 items-center justify-center rounded-full"
+                >
+                  {locale.toUpperCase()}
+                </DropdownMenuItem>
+              );
+            }
+          })}
         </DropdownMenuContent>
       </DropdownMenu>
     </div>
