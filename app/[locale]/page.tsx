@@ -9,13 +9,14 @@ export default function Home() {
         <p>{t("subTitle")}</p>
       </div>
       <h1></h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
+      <div className="flex flex-col gap-3">
+        <span>
+          {`I'm a passionate developer with expertise in modern web technologies. I enjoy building efficient, user-friendly applications with a focus on clean code and best practices. With a strong foundation in both frontend and backend development, I create seamless experiences that solve real-world problems.`}
+        </span>
+        <span>
+          {`My approach combines technical expertise with a deep understanding of user needs, resulting in solutions that are not only technically sound but also intuitive and enjoyable to use. I'm constantly learning new technologies and methodologies to stay at the forefront of the rapidly evolving tech landscape.`}
+        </span>
+      </div>
     </section>
   );
 }

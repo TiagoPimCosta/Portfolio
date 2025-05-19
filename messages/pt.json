@@ -5,17 +5,21 @@
     "skills": "skills",
     "portfolio": "portfólio"
   },
+  "Footer": {
+    "findMeOn": "Podes encontrar-me no",
+    "emailMeAt": "Ou envie-me um e-mail para"
+  },
   "HomePage": {
     "title": "Olá, sou o Tiago Pimenta Costa",
     "subTitle": "Programador FullStack localizado Porto, Portugal"
   },
   "AboutPage": {
-    "title": "Página Sobre"
+    "title": "Sobre mim"
   },
   "SkillsPage": {
-    "title": "Página Skills"
+    "title": "Skills"
   },
   "PortfolioPage": {
-    "title": "Página Portfólio"
+    "title": "Portfólio"
   }
 }

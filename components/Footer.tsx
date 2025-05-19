@@ -1,4 +1,5 @@
-import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
+import { useTranslations } from "next-intl";
 
 const footerItems = [
   {
@@ -9,16 +10,15 @@ const footerItems = [
     url: "https://github.com/TiagoPimCosta",
     icon: IconBrandGithub,
   },
-  {
-    url: "/",
-    icon: IconMail,
-  },
 ];
 
 export default function Footer() {
+  const t = useTranslations("Footer");
+
   return (
-    <footer className="mt-16">
-      <ul className="font-sm mt-8 flex text-neutral-600 space-x-4 space-y-0 dark:text-neutral-300">
+    <footer className="flex flex-col gap-3 mt-16 mb-16">
+      <span>{t("findMeOn")}</span>
+      <ul className="font-sm flex text-neutral-600 space-x-4 space-y-0 dark:text-neutral-300">
         {footerItems.map((item, index) => (
           <li key={`footer-${index}-element`}>
             <a
@@ -32,6 +32,7 @@ export default function Footer() {
           </li>
         ))}
       </ul>
+      <span>{t("emailMeAt")} tiagopimcosta@gmail.com</span>
     </footer>
   );
 }
