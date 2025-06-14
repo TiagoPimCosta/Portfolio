@@ -5,14 +5,11 @@ import ThemeProvider from "@/components/providers/theme-provider";
 import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { Button } from "@/components/ui/button";
-import { IconDownload } from "@tabler/icons-react";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/src/i18n/routing";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
-import { cn } from "@/lib/utils";
-import RidingDotsOnGridLines from "@/components/backgrounds/RidingDotsOnGridLines";
+import CVButton from "@/components/CVButton";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -53,26 +50,8 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <RidingDotsOnGridLines />
             <div className="max-w-xl mx-4 lg:mx-auto mt-8 relative">
               <Navbar />
-              <Button
-                variant="outline"
-                className={cn(
-                  "fixed h-10 rounded-full z-50 w-fit",
-                  "left-8 bottom-8", // default for mobile
-                  "md:left-auto md:bottom-auto md:top-8 md:right-8" // override for desktop
-                )}
-                asChild
-              >
-                <a
-                  href="/TiagoPimCosta_CV_Original.pdf"
-                  download
-                  className="inline-flex items-center gap-2"
-                >
-                  CV <IconDownload />
-                </a>
-              </Button>
               {children}
               <Footer />
             </div>
@@ -81,6 +60,9 @@ export default async function RootLayout({
                 <LanguageSwitcher />
                 <ThemeToggle />
               </div>
+            </div>
+            <div className="fixed left-8 bottom-8 md:left-auto md:bottom-auto md:top-8 md:right-8">
+              <CVButton />
             </div>
           </ThemeProvider>
         </NextIntlClientProvider>

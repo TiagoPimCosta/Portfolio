@@ -2,12 +2,13 @@
 
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/navigation";
 
 export function Navbar() {
   const pathname = usePathname();
   const t = useTranslations("Navbar");
+  const locale = useLocale();
 
   const navItems = {
     "/": {
@@ -24,6 +25,8 @@ export function Navbar() {
     },
   };
 
+  const currentPath = pathname.replace(`/${locale}`, "") || "/";
+
   return (
     <aside className="-ml-[8px] mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
@@ -38,8 +41,10 @@ export function Navbar() {
                   key={path}
                   href={path}
                   className={cn(
-                    "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1",
-                    pathname === path ? "border-b" : ""
+                    "relative transition-colors duration-300 hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle py-1 px-2 m-1 border-b",
+                    currentPath === path
+                      ? "border-orange-500 after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-orange-500 after:blur-sm"
+                      : "border-gray-300 dark:border-neutral-700"
                   )}
                 >
                   {name}
