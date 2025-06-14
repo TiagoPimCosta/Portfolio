@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   title: "TiagoPimCosta's Portfolio",
   description:
     "Hi, I'm Tiago Pimenta Costa, a fullstack web developer passionate about building fast, responsive, and user-friendly websites. Check out my work and let's create something amazing together!",
+  icons: {
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png" }],
+  },
 };
 
 export default async function RootLayout({

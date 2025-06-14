@@ -10,8 +10,9 @@
     "emailMeAt": "Or mail me at"
   },
   "HomePage": {
-    "title": "Hey, I'm Tiago Pimenta Costa",
-    "subTitle": "FullStack Developer based in Porto, Portugal"
+    "title": "Tiago Pimenta Costa",
+    "firstParagraph": "I'm a FullStack web developer passionate about building fast, accessible, and elegant digital experiences. With a strong focus on clean code and thoughtful design, I bring ideas to life by turning complex problems into intuitive and functional interfaces. Whether it's developing dynamic user interfaces or optimizing performance behind the scenes, I strive to create products that not only work well but feel great to use.",
+    "secondParagraph": "Over the past few years, I've worked on a range of projects — from websites for local businesses to scalable web applications. I enjoy collaborating with others, continuously learning, and staying up to date with the latest technologies and best practices. This portfolio is a reflection of my journey, my work, and the type of value I aim to bring to every project."
   },
   "AboutPage": {
     "title": "About Me"

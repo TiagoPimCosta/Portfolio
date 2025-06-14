@@ -16,7 +16,7 @@ export default function Footer() {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="flex flex-col gap-3 mt-16 mb-16">
+    <footer className="flex flex-col gap-3 mt-16 mb-24">
       <span>{t("findMeOn")}</span>
       <ul className="font-sm flex text-neutral-600 space-x-4 space-y-0 dark:text-neutral-300">
         {footerItems.map((item, index) => (
