@@ -50,7 +50,6 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {/* <RidingDotsOnGridLines /> */}
             <div className="max-w-xl mx-4 lg:mx-auto mt-8 relative">
               <Navbar />
               {children}
