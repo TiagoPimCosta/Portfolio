@@ -1,21 +1,27 @@
+import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 export default function Home() {
   const t = useTranslations("HomePage");
   return (
-    <section>
-      <div className="mb-8">
-        <h1 className="text-2xl font-semibold tracking-tighter">{t("title")}</h1>
-        <p>{t("subTitle")}</p>
+    <section className="flex flex-col gap-6">
+      <div className="flex flex-col gap-1">
+        <h1 className="text-3xl font-semibold tracking-tighter">{t("title")}</h1>
       </div>
-      <h1></h1>
-      <div className="flex flex-col gap-3">
-        <span>
-          {`I'm a passionate developer with expertise in modern web technologies. I enjoy building efficient, user-friendly applications with a focus on clean code and best practices. With a strong foundation in both frontend and backend development, I create seamless experiences that solve real-world problems.`}
-        </span>
-        <span>
-          {`My approach combines technical expertise with a deep understanding of user needs, resulting in solutions that are not only technically sound but also intuitive and enjoyable to use. I'm constantly learning new technologies and methodologies to stay at the forefront of the rapidly evolving tech landscape.`}
-        </span>
+      <div className="flex flex-col gap-1.5">
+        <p className="flex items-center gap-2">
+          Currently working at
+          <Badge variant="secondary">
+            <Link href="https://www.bridgein.pt/" target="/blank">
+              BridgeIn
+            </Link>
+          </Badge>
+        </p>
+      </div>
+      <div className="flex flex-col gap-2 text-left md:text-justify">
+        <p className="indent-3">{t("firstParagraph")}</p>
+        <p className="indent-3">{t("secondParagraph")}</p>
       </div>
     </section>
   );

@@ -10,8 +10,9 @@
     "emailMeAt": "Ou envie-me um e-mail para"
   },
   "HomePage": {
-    "title": "Olá, sou o Tiago Pimenta Costa",
-    "subTitle": "Programador FullStack localizado Porto, Portugal"
+    "title": "Tiago Pimenta Costa",
+    "firstParagraph": "Sou um programador FullStack web apaixonado por criar experiências digitais rápidas, acessíveis e elegantes. Com foco em código limpo e design cuidadoso, transformo ideias em interfaces intuitivas e funcionais. Seja a desenvolver interfaces dinâmicas ou a otimizar o desempenho por trás dos bastidores, procuro sempre criar produtos que não só funcionem bem, mas que também proporcionem uma boa experiência ao utilizador.",
+    "secondParagraph": "Nos últimos anos, trabalhei em vários projetos — desde websites para negócios locais até aplicações web escaláveis. Gosto de colaborar com outras pessoas, de aprender continuamente e de me manter atualizado com as mais recentes tecnologias e boas práticas. Este portefólio é o reflexo do meu percurso, do meu trabalho e do valor que procuro acrescentar em cada projeto."
   },
   "AboutPage": {
     "title": "Sobre mim"
