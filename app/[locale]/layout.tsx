@@ -54,7 +54,7 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="max-w-xl mx-4 lg:mx-auto mt-8 relative">
+            <div className="max-w-3xl mx-4 lg:mx-auto mt-8 relative">
               <Navbar />
               {children}
               <Footer />

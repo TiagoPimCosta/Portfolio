@@ -15,7 +15,33 @@
     "secondParagraph": "Over the past few years, I've worked on a range of projects — from websites for local businesses to scalable web applications. I enjoy collaborating with others, continuously learning, and staying up to date with the latest technologies and best practices. This portfolio is a reflection of my journey, my work, and the type of value I aim to bring to every project."
   },
   "AboutPage": {
-    "title": "About Me"
+    "title": "About Me",
+    "description": "With over 5 years of experience in software development, Ive worked on a diverse range of projects from small business websites to complex enterprise applications. My journey began with a degree in Computer Science, followed by continuous self-learning and professional growth.",
+    "workExperience": "Work Experience",
+    "bridgeInTitle": "Frontend Developer",
+    "bridgeInStartDate": "Sep 2024",
+    "bridgeInEndDate": "Present",
+    "bridgeInDescription": "",
+    "capSpmsTitle": "Fullstack Developer",
+    "capSpmsStartDate": "Feb 2024",
+    "capSpmsEndDate": "Sep 2024",
+    "capSpmsDescription": "",
+    "capFfBeTitle": "Backend Developer",
+    "capFfBeStartDate": "Jan 2023",
+    "capFfBeEndDate": "Jan 2024",
+    "capFfBeDescription": "",
+    "capFfFeTitle": "Frontend Developer",
+    "capFfFeStartDate": "Jan 2022",
+    "capFfFeEndDate": "Dec 2022",
+    "capFfFeDescription": "",
+    "education": "Education",
+    "masterTitle": "Integrated Master's Degree in Information Systems Engineering and Management",
+    "masterUniversity": "University of Minho",
+    "masterStartDate": "Sep 2016",
+    "masterEndDate": "Oct 2021",
+    "masterDescription": "Grade: 15",
+    "personalInterestsTitle": "Personal Interests",
+    "personalInterestsText": "Beyond coding, I enjoy hiking in the mountains, reading science fiction novels, and experimenting with home automation projects. Im also an active contributor to open-source projects and regularly attend local tech meetups and conferences."
   },
   "SkillsPage": {
     "title": "Skills"
