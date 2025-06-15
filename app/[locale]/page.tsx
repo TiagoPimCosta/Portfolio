@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { workExperiences } from "@/src/data";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
@@ -12,11 +13,9 @@ export default function Home() {
       <div className="flex flex-col gap-1.5">
         <p className="flex items-center gap-2">
           Currently working at
-          <Badge variant="secondary">
-            <Link href="https://www.bridgein.pt/" target="/blank">
-              BridgeIn
-            </Link>
-          </Badge>
+          <Link href={workExperiences[0].href} target="/blank">
+            <Badge variant="secondary">{workExperiences[0].company}</Badge>
+          </Link>
         </p>
       </div>
       <div className="flex flex-col gap-2 text-left md:text-justify">

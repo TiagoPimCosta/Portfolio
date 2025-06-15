@@ -1,42 +1,9 @@
 import React from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
-
-const workExperiences = [
-  {
-    title: "Frontend Developer",
-    company: "Bridge In",
-    date: "Sep 2024 - Present",
-    description: "",
-  },
-  {
-    title: "Fullstack Developer",
-    company: "Capgemini Engineering • SPMS",
-    date: "Feb 2024 - Sep 2024",
-    description: "",
-  },
-  {
-    title: "Backend Developer",
-    company: "Capgemini Engineering • Farfetch",
-    date: "Jan 2023 - Jan 2024",
-    description: "",
-  },
-  {
-    title: "Frontend Developer",
-    company: "Capgemini Engineering • Farfetch ",
-    date: "Jan 2022 - Dec 2022",
-    description: "",
-  },
-];
-
-const educations = [
-  {
-    title: "Master in Engineering and Management of Information System",
-    subTitle: "University of Minho",
-    date: "Sep 2016 - Oct 2021",
-    description: "",
-  },
-];
+import { educations, workExperiences } from "@/src/data";
+import Link from "next/link";
+import { IconLink } from "@tabler/icons-react";
 
 const AboutPage = () => {
   const t = useTranslations("AboutPage");
@@ -45,43 +12,65 @@ const AboutPage = () => {
     <div>
       <h1 className="text-3xl font-bold mb-6">{t("title")}</h1>
       <div className="space-y-8">
-        <p className="text-lg">
-          With over 5 years of experience in software development, Ive worked on a diverse range of
-          projects from small business websites to complex enterprise applications. My journey began
-          with a degree in Computer Science, followed by continuous self-learning and professional
-          growth.
-        </p>
-
+        <p className="text-justify">{t("description")}</p>
         <div className="flex flex-col gap-6">
           <Card>
-            <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold mb-2">Work Experience</h3>
+            <CardHeader>
+              <CardTitle className="text-2xl">{t("workExperience")}</CardTitle>
+            </CardHeader>
+            <CardContent>
               <ul className="space-y-4">
                 {workExperiences.map((workExperience, index) => (
                   <li key={`${workExperience.title}-${index}`}>
-                    <div className="font-medium">{workExperience.title}</div>
-                    <div className="flex text-muted-foreground justify-between">
-                      <div>{workExperience.company}</div>
-                      <div>{workExperience.date}</div>
+                    <div className="flex flex-col md:flex-row font-medium md:justify-between">
+                      <div>{t(workExperience.title)}</div>
+                      <div className="flex gap-1 md:items-end min-w-fit">
+                        <span>{t(workExperience.startDate)}</span>
+                        <span className="">-</span>
+                        <span>{t(workExperience.endDate)}</span>
+                      </div>
                     </div>
-                    <p className="mt-1">{workExperience.description}</p>
+                    <Link
+                      href={workExperience.href}
+                      target="/blank"
+                      className="flex gap-1 text-muted-foreground items-center w-fit"
+                    >
+                      {workExperience.company}
+                      <IconLink className="h-4 w-4" />
+                    </Link>
+
+                    <p className="mt-1">{t(workExperience.description)}</p>
                   </li>
                 ))}
               </ul>
             </CardContent>
           </Card>
           <Card>
-            <CardContent className="pt-6">
-              <h3 className="text-xl font-semibold mb-2">Education</h3>
+            <CardHeader>
+              <CardTitle className="text-2xl">{t("education")}</CardTitle>
+            </CardHeader>
+            <CardContent>
               <ul className="space-y-4">
                 {educations.map((education, index) => (
                   <li key={`${education.title}-${index}`}>
-                    <div className="font-medium">{education.title}</div>
-                    <div className="flex text-muted-foreground justify-between">
-                      <div>{education.subTitle}</div>
-                      <div>{education.date}</div>
+                    <div className="flex flex-col md:flex-row font-medium md:justify-between">
+                      <div>{t(education.title)}</div>
+                      <div className="flex gap-1 md:items-end min-w-fit">
+                        <span>{t(education.startDate)}</span>
+                        <span className="">-</span>
+                        <span>{t(education.endDate)}</span>
+                      </div>
                     </div>
-                    <p className="mt-1">{education.description}</p>
+                    <Link
+                      href={education.href}
+                      target="/blank"
+                      className="flex gap-1 text-muted-foreground items-center w-fit"
+                    >
+                      <div>{t(education.subTitle)}</div>
+
+                      <IconLink className="h-4 w-4" />
+                    </Link>
+                    <p className="mt-1 text-muted-foreground ">{t(education.description)}</p>
                   </li>
                 ))}
               </ul>
@@ -90,12 +79,8 @@ const AboutPage = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold mb-4">Personal Interests</h3>
-          <p className="text-lg">
-            Beyond coding, I enjoy hiking in the mountains, reading science fiction novels, and
-            experimenting with home automation projects. Im also an active contributor to
-            open-source projects and regularly attend local tech meetups and conferences.
-          </p>
+          <h3 className="text-xl font-semibold mb-4">{t("personalInterestsTitle")}</h3>
+          <p className="text-justify">{t("personalInterestsText")}</p>
         </div>
       </div>
     </div>

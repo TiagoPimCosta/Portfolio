@@ -15,7 +15,33 @@
     "secondParagraph": "Nos últimos anos, trabalhei em vários projetos — desde websites para negócios locais até aplicações web escaláveis. Gosto de colaborar com outras pessoas, de aprender continuamente e de me manter atualizado com as mais recentes tecnologias e boas práticas. Este portefólio é o reflexo do meu percurso, do meu trabalho e do valor que procuro acrescentar em cada projeto."
   },
   "AboutPage": {
-    "title": "Sobre mim"
+    "title": "Sobre mim",
+    "description": "Sou um programador FullStack web apaixonado por criar experiências digitais rápidas, acessíveis e elegantes. Com foco em código limpo e design cuidadoso, transformo ideias em interfaces intuitivas e funcionais. Seja a desenvolver interfaces dinâmicas ou a otimizar o desempenho por trás dos bastidores, procuro sempre criar produtos que não só funcionem bem, mas que também proporcionem uma boa experiência ao utilizador.",
+    "workExperience": "Experiência",
+    "bridgeInTitle": "Desenvolvedor Frontend",
+    "bridgeInStartDate": "Set 2024",
+    "bridgeInEndDate": "Atual",
+    "bridgeInDescription": "",
+    "capSpmsTitle": "Desenvolvedor Fullstack",
+    "capSpmsStartDate": "Fev 2024",
+    "capSpmsEndDate": "Set 2024",
+    "capSpmsDescription": "",
+    "capFfBeTitle": "Desenvolvedor Backend",
+    "capFfBeStartDate": "Jan 2023",
+    "capFfBeEndDate": "Jan 2024",
+    "capFfBeDescription": "",
+    "capFfFeTitle": "Desenvolvedor Frontend",
+    "capFfFeStartDate": "Jan 2022",
+    "capFfFeEndDate": "Dez 2022",
+    "capFfFeDescription": "",
+    "education": "Educação",
+    "masterTitle": "Mestrado Integrado Engenharia e Gestão de Sistemas de Informação",
+    "masterUniversity": "Universidade do Minho",
+    "masterStartDate": "Set 2016",
+    "masterEndDate": "Out 2021",
+    "masterDescription": "Nota Final: 15",
+    "personalInterestsTitle": "Interesses Pessoais",
+    "personalInterestsText": "Além de programar, gosto de fazer trilhas nas montanhas, ler romances de ficção científica e experimentar projetos de automação residencial. Também sou um colaborador ativo de projetos de código aberto e participo regularmente de encontros e conferências locais de tecnologia."
   },
   "SkillsPage": {
     "title": "Skills"
