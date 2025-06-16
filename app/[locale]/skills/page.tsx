@@ -2,29 +2,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useTranslations } from "next-intl";
-
-const frontendSkills = [
-  "React",
-  "JavaScript",
-  "TypeScript",
-  "HTML/CSS",
-  "Tailwind CSS",
-  "Next.js",
-  "Responsive Design",
-];
-
-const backendSkills = [
-  "Node.js",
-  "Express",
-  "Nest.js",
-  "MySQL",
-  "PostgreSQL",
-  "MongoDB",
-  "GraphQL",
-  "RESTful APIs",
-];
-
-//const otherSkills = ["Git", "Docker", "CI/CD", "Agile Methodologies", "Testing", "UI/UX Design"];
+import { backendSkills, frontendSkills, otherSkills } from "@/src/data";
 
 const SkillsPage = () => {
   const t = useTranslations("SkillsPage");
@@ -34,11 +12,12 @@ const SkillsPage = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-6">{t("title")}</h1>
 
-        <div className="grid md:grid-cols-2 gap-6 mb-10">
+        <div className="grid md:grid-cols-2 gap-6">
           <Card>
-            <CardHeader className="pb-2">
-              <CardTitle>Frontend Development</CardTitle>
+            <CardHeader>
+              <CardTitle className="text-xl">{t("frontendDevelopmentCardTitle")}</CardTitle>
             </CardHeader>
+
             <CardContent>
               <div className="flex flex-wrap gap-2">
                 {frontendSkills.map((skill) => (
@@ -51,8 +30,8 @@ const SkillsPage = () => {
           </Card>
 
           <Card>
-            <CardHeader className="pb-2">
-              <CardTitle>Backend Development</CardTitle>
+            <CardHeader>
+              <CardTitle className="text-xl">{t("backendDevelopmentCardTitle")}</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-2">
@@ -64,25 +43,25 @@ const SkillsPage = () => {
               </div>
             </CardContent>
           </Card>
+
+          <Card className="col-span-full mb-10">
+            <CardHeader>
+              <CardTitle className="text-xl">{t("otherTools&TechnologiesCardTitle")}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {otherSkills.map((skill) => (
+                  <Badge key={skill} variant="secondary" className="text-sm py-1 px-3">
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
-        {/* <Card className="mb-10">
-          <CardHeader className="pb-2">
-            <CardTitle>Tools & Technologies</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="flex flex-wrap gap-2">
-              {otherSkills.map((skill) => (
-                <Badge key={skill} variant="secondary" className="text-sm py-1 px-3">
-                  {skill}
-                </Badge>
-              ))}
-            </div>
-          </CardContent>
-        </Card> */}
-
         <div>
-          <h2 className="text-2xl font-semibold mb-4">Development Philosophy</h2>
+          <h2 className="text-2xl font-semibold mb-4">{t("developmentPhilosophyTitle")}</h2>
           <p className="text-lg mb-4">
             I believe in writing clean, maintainable code that solves real problems. My approach
             focuses on:

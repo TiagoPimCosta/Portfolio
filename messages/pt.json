@@ -44,7 +44,11 @@
     "personalInterestsText": "Além de programar, gosto de fazer trilhas nas montanhas, ler romances de ficção científica e experimentar projetos de automação residencial. Também sou um colaborador ativo de projetos de código aberto e participo regularmente de encontros e conferências locais de tecnologia."
   },
   "SkillsPage": {
-    "title": "Skills"
+    "title": "Skills",
+    "frontendDevelopmentCardTitle": "Desenvolvimento Frontend",
+    "backendDevelopmentCardTitle": "Desenvolvimento Backend",
+    "otherTools&TechnologiesCardTitle": "Outras Ferramentas e Tecnologias",
+    "developmentPhilosophyTitle": "Filosofia de Desenvolvimento"
   },
   "PortfolioPage": {
     "title": "Portfólio"

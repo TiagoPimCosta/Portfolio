@@ -44,7 +44,11 @@
     "personalInterestsText": "Beyond coding, I enjoy hiking in the mountains, reading science fiction novels, and experimenting with home automation projects. Im also an active contributor to open-source projects and regularly attend local tech meetups and conferences."
   },
   "SkillsPage": {
-    "title": "Skills"
+    "title": "Skills",
+    "frontendDevelopmentCardTitle": "Frontend Development",
+    "backendDevelopmentCardTitle": "Backend Development",
+    "otherTools&TechnologiesCardTitle": "Other Tools & Technologies",
+    "developmentPhilosophyTitle": "Development Philosophy"
   },
   "PortfolioPage": {
     "title": "Portfolio"
