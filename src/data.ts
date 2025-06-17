@@ -44,3 +44,33 @@ export const educations = [
     description: "masterDescription",
   },
 ];
+
+export const frontendSkills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Tailwind CSS",
+];
+
+export const backendSkills = [
+  "Node.js",
+  "Express",
+  "Nest.js",
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "RESTful APIs",
+  "GraphQL",
+];
+
+export const otherSkills = [
+  "Git",
+  "Docker",
+  "CI/CD",
+  "Agile Methodologies",
+  "Testing",
+  "UI/UX Design",
+];

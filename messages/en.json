@@ -44,7 +44,19 @@
     "personalInterestsText": "Beyond coding, I enjoy hiking in the mountains, reading science fiction novels, and experimenting with home automation projects. Im also an active contributor to open-source projects and regularly attend local tech meetups and conferences."
   },
   "SkillsPage": {
-    "title": "Skills"
+    "title": "Skills",
+    "frontendDevelopmentCardTitle": "Frontend Development",
+    "backendDevelopmentCardTitle": "Backend Development",
+    "otherTools&TechnologiesCardTitle": "Other Tools & Technologies",
+    "developmentPhilosophyTitle": "Development Philosophy",
+    "developmentPhilosophyIntro": "I believe in writing clean, maintainable code that solves real problems. My approach focuses on:",
+    "developmentPhilosophyPoints": {
+      "userFirstMindset": "Building applications with a user-first mindset",
+      "selfDocumentingCode": "Writing self-documenting code",
+      "testDrivenDevelopment": "Following test-driven development when appropriate",
+      "continuousLearning": "Continuous learning and adaptation to new technologies",
+      "crossFunctionalCollaboration": "Collaborating effectively with cross-functional teams"
+    }
   },
   "PortfolioPage": {
     "title": "Portfolio"
