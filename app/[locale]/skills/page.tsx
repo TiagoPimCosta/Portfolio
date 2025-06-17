@@ -62,16 +62,13 @@ const SkillsPage = () => {
 
         <div>
           <h2 className="text-2xl font-semibold mb-4">{t("developmentPhilosophyTitle")}</h2>
-          <p className="text-lg mb-4">
-            I believe in writing clean, maintainable code that solves real problems. My approach
-            focuses on:
-          </p>
+          <p className="text-lg mb-4">{t("developmentPhilosophyIntro")}</p>
           <ul className="list-disc pl-6 space-y-2 text-lg">
-            <li>Building applications with a user-first mindset</li>
-            <li>Writing self-documenting code with appropriate comments</li>
-            <li>Following test-driven development when appropriate</li>
-            <li>Continuous learning and adaptation to new technologies</li>
-            <li>Collaborating effectively with cross-functional teams</li>
+            <li>{t("developmentPhilosophyPoints.userFirstMindset")}</li>
+            <li>{t("developmentPhilosophyPoints.selfDocumentingCode")}</li>
+            <li>{t("developmentPhilosophyPoints.testDrivenDevelopment")}</li>
+            <li>{t("developmentPhilosophyPoints.continuousLearning")}</li>
+            <li>{t("developmentPhilosophyPoints.crossFunctionalCollaboration")}</li>
           </ul>
         </div>
       </div>

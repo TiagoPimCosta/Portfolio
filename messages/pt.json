@@ -48,7 +48,15 @@
     "frontendDevelopmentCardTitle": "Desenvolvimento Frontend",
     "backendDevelopmentCardTitle": "Desenvolvimento Backend",
     "otherTools&TechnologiesCardTitle": "Outras Ferramentas e Tecnologias",
-    "developmentPhilosophyTitle": "Filosofia de Desenvolvimento"
+    "developmentPhilosophyTitle": "Filosofia de Desenvolvimento",
+    "developmentPhilosophyIntro": "Acredito em escrever código limpo e de fácil manutenção que resolva problemas reais. A minha abordagem foca-se em:",
+    "developmentPhilosophyPoints": {
+      "userFirstMindset": "Criar aplicações com foco no utilizador",
+      "selfDocumentingCode": "Escrever código autoexplicativo",
+      "testDrivenDevelopment": "Seguir desenvolvimento orientado por testes quando apropriado",
+      "continuousLearning": "Aprender continuamente e adaptar-me a novas tecnologias",
+      "crossFunctionalCollaboration": "Colaborar de forma eficaz com equipas multidisciplinares"
+    }
   },
   "PortfolioPage": {
     "title": "Portfólio"
